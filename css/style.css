@@ -1,9 +1,4 @@
-/*
-* Template Name: Eveno - Event & Meetup Conference Template
-* Author:  Giantco
-* Author URL: https://themeforest.net/user/giantco
-* Version: 1.0
-*/
+
 
 /* =============================================================================
 
@@ -365,7 +360,7 @@ p {
 }
 
 .nav-bg {
-    background: #2a2d48 !important;
+    background: #b10f56!important;
     -webkit-box-shadow: 0 6px 30px -18px;
     box-shadow: 0 6px 30px -18px;
     padding-top: 20px;
