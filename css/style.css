@@ -604,7 +604,7 @@ p {
         height: 500px;
         object-fit: cover;
       border-radius: 10px;
-      border: 2px solid white;
+      border: 2px solid black;
       margin-bottom: 1rem;
       transition: all 0.7s ease;
       display: block;
