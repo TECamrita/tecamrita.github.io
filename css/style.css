@@ -309,13 +309,13 @@ p {
 .navbar {
     position: fixed;
     width: 100%;
-    z-index: 999999;
+    /* z-index: 999999;
     -weebkit-transition: all linear .3s;
     -webkit-transition: all linear .3s;
     -o-transition: all linear .3s;
-    transition: all linear .3s;
+    transition: all linear .3s; */
     padding-top: 15px;
-    background: transparent !important;
+    background: #b10f56 !important;
 }
 
 .menu-item {
