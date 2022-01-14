@@ -931,7 +931,7 @@ p {
 }
 
 #organize_2 {
-    background: #2d304b;
+    background: #b10f56;
     padding: 40px 0;
 }
 
@@ -993,7 +993,7 @@ p {
     right: 0;
     height: 50px;
     width: 1px;
-    background: #32396a;
+    background: #ff0572;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -1009,7 +1009,7 @@ p {
     width: 55px;
     height: 55px;
     line-height: 55px;
-    background: #646caf;
+    background: #f9a22d;
     text-align: center;
     border-radius: 50%;
 }
@@ -1023,7 +1023,7 @@ p {
 }
 
 .org-item p {
-    color: #aaadd0;
+    color: #ffffff;
     font-size: 19px;
     font-family: br;
 }
