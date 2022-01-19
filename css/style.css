@@ -36,6 +36,8 @@
     width: 100%;
     padding: 0.25rem 1.5rem;
     clear: both;
+    font-family: br;
+    font-size: 19px;
     font-weight: 400;
     color: #ffffff;
     text-align: inherit;
