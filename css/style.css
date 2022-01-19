@@ -24,6 +24,12 @@
 0.0 *** Common CSS START ***
 =============================*/
 
+.btn-primary {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #007bff;
+}
+
 .dropdown-menu.show {
     display: block;
     background-color: #b10f56;
