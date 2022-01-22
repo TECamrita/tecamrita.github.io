@@ -381,7 +381,7 @@ p {
 }
 
 .nav-bg {
-    background: #b10f56!important;
+    background: #b5164e!important;
     -webkit-box-shadow: 0 6px 30px -18px;
     box-shadow: 0 6px 30px -18px;
     padding-top: 20px;
@@ -645,7 +645,7 @@ p {
     width: 451px;
     height: 80px;
     line-height: 80px;
-    background: #b10f56;
+    background: #b5164e;
     text-align: center;
     font-family: bb;
     font-size: 36px;
@@ -960,7 +960,7 @@ p {
 }
 
 #organize_2 {
-    background: #b10f56;
+    background: #b5164e;
     padding: 40px 0;
 }
 
@@ -1999,7 +1999,7 @@ p {
 
 #footer {
     padding: 60px 0;
-    background: #b10f56;
+    background: #b5164e;
 }
 
 .footer-txt h3 a {
@@ -2026,7 +2026,7 @@ p {
 
 #footer_2 {
     padding-bottom: 60px;
-    background: #b10f56;
+    background: #b5164e;
 }
 
 .menu-a a {
@@ -2050,7 +2050,7 @@ p {
 
 #copy_right {
     padding: 30px 0;
-    background: #b10f56;
+    background: #b5164e;
     position: relative;
 }
 
