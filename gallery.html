@@ -132,8 +132,8 @@
                         <br><br><br><br><br>
                         <h3>Gallery<span>.</span></h3>
                       
-                        <br>
-                        <br><br>
+                        <!-- <br> -->
+                        <!-- <br><br> -->
                     </div>
                 </div>
             </div>
@@ -267,6 +267,30 @@
                     width: 100%;
                 }
             }
+        /* Accordian style */
+            .accordion {
+            background-color: #b5b5b5;
+            color: #0a0a0a;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+            }
+
+            .active, .accordion:hover {
+            background-color: #b10f56; 
+            }
+
+            .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+            }
         </style>
         <div class="container">
             <div class="row">
@@ -277,10 +301,8 @@
                 </div>
             </div><br><br><br>
             
-                    <!-- <button class="accordion" style="background-color: rgb(234, 234, 234); border-color: #fff;">
-                    Gallery
-                    </button>
-                    <div class="content" style="background-color: white;">  -->
+                    <button class="accordion">Gallery</button>
+                    <div class="panel"> 
 
                         <div class="container zindex" style="border: 2px solid #b10f56;border-radius: 10px;">
                             <div class="about-txt">
@@ -446,586 +468,594 @@
                                 </div>
                             </div>
                         </div><br>
-                    <!-- </div> -->
+                    </div>
                 
             <br><br>
             <!-- Interactions  -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="row">
-                        <!-- Card begnin -->
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/csrfunding.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Brainstorming session on “CSR Funding Opportunities” for technology Development.
-                                </p>
+            <button class="accordion">Interaction</button>
+            <div class="panel"> 
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/csrfunding.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Brainstorming session on “CSR Funding Opportunities” for technology Development.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end -->
-                         <!-- Card begnin -->
-                         <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/msmetrissure.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Interactions with MSME Entrepreneurs at Vendor Development Program held at Thrissur. The various supports extended by the center was explained.
-                                </p>
+                            <!-- Card end -->
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/msmetrissure.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Interactions with MSME Entrepreneurs at Vendor Development Program held at Thrissur. The various supports extended by the center was explained.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end -->
-                         <!-- Card begnin -->
-                         <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/chamberofindustries.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with Bangalore Chamber of Industries and Commerce, Bengaluru.
-                                </p>
+                            <!-- Card end -->
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/chamberofindustries.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with Bangalore Chamber of Industries and Commerce, Bengaluru.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end -->
-                         <!-- Card begnin -->
-                         <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/innovationinstitute.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Interactions with Entrepreneurship Development and Innovation Institute for ecosystem partnership for technology development, technology transfer and technology commercialization.
-                                </p>
+                            <!-- Card end -->
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/innovationinstitute.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Interactions with Entrepreneurship Development and Innovation Institute for ecosystem partnership for technology development, technology transfer and technology commercialization.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end -->
-                         <!-- Card begnin -->
-                         <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/iot.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Amrita Technology Enabling Center display various IoT enabled technologies at National Vendor Development Program held at Kochi. These are cost effective solutions for MSMEs.
-                                </p>
+                            <!-- Card end -->
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/iot.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Amrita Technology Enabling Center display various IoT enabled technologies at National Vendor Development Program held at Kochi. These are cost effective solutions for MSMEs.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end -->
-                        <!-- Card begnin -->
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/cochinshipyard.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Amrita Technology Enabling Center visit to Cochin Ship Yard, Kochi.
-                                </p>
+                            <!-- Card end -->
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/cochinshipyard.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Amrita Technology Enabling Center visit to Cochin Ship Yard, Kochi.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end -->
-                         <!-- Card begnin -->
-                         <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/confederation.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with Confederation of Indian Industries to showcase technological expertise, foster innovation, and forge partnerships for impactful technology-driven solutions,
-                                </p>
+                            <!-- Card end -->
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/confederation.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with Confederation of Indian Industries to showcase technological expertise, foster innovation, and forge partnerships for impactful technology-driven solutions,
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end -->
-                          <!-- Card begnin -->
-                          <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/kvees.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Interactions with Kvees Food Pvt Ltd for collaboration to build a more sustainable and innovative food system for the future.
-                                </p>
+                            <!-- Card end -->
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/kvees.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Interactions with Kvees Food Pvt Ltd for collaboration to build a more sustainable and innovative food system for the future.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end -->
-                         <!-- Card begnin -->
-                         <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/wipro.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with WIPRO for collaboration and funding opportunities for sustainable technology.
-                                </p>
+                            <!-- Card end -->
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/wipro.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with WIPRO for collaboration and funding opportunities for sustainable technology.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end -->
-                        <!-- Card begnin -->
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/safepower.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Interactions with M/S Safe Power for technology development for agricultural implements.
-                                </p>
+                            <!-- Card end -->
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/safepower.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Interactions with M/S Safe Power for technology development for agricultural implements.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end -->
-                        <!-- Card begnin -->
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/plywood.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with Plywood consortium for technology development for Smart Automation.
-                                </p>
+                            <!-- Card end -->
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/plywood.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with Plywood consortium for technology development for Smart Automation.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end -->
-                        <!-- Card begnin -->
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/holmarc.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with M/S  Holmorc Opto Mechatronics for technology commercialization of Universal Measuring Machine.
-                                </p>
+                            <!-- Card end -->
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/holmarc.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with M/S  Holmorc Opto Mechatronics for technology commercialization of Universal Measuring Machine.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end -->
-                         <!-- Card begnin -->
-                         <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/nazeela.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with Nazeela Industries for waste to value products development from wood industries.
-                                </p>
+                            <!-- Card end -->
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/nazeela.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with Nazeela Industries for waste to value products development from wood industries.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end -->
-                          <!-- Card begnin -->
-                          <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/maks.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Interactions with MAKS Automation, Kottarakkara for affordable Industry 4.0 sensors and system development for SMEs.
-                                </p>
+                            <!-- Card end -->
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/maks.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Interactions with MAKS Automation, Kottarakkara for affordable Industry 4.0 sensors and system development for SMEs.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end -->
-                        <!-- Card begnin -->
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/nift.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with NIFT -TEA for collaboration for technology requirements of textile industries.
-                                </p>
+                            <!-- Card end -->
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/nift.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with NIFT -TEA for collaboration for technology requirements of textile industries.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end -->
-                        <!-- Card begnin -->
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/fablabs.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Visit to Kerala Startup Fablab and Maker Village for ecosystem partnership.
-                                </p>
+                            <!-- Card end -->
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/fablabs.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Visit to Kerala Startup Fablab and Maker Village for ecosystem partnership.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end -->
-                        <!-- Card begnin -->
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/agricultural.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with M/S Kumar Tools, agricultural implements, and tools manufacturer to identify technology requirements. 
-                                </p>
+                            <!-- Card end -->
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/agricultural.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with M/S Kumar Tools, agricultural implements, and tools manufacturer to identify technology requirements. 
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end -->
-                        <!-- Card begnin -->
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/technologyexibition.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with Industry association in the technology exhibition fair organized by TEC.
-                                </p>
+                            <!-- Card end -->
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/technologyexibition.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with Industry association in the technology exhibition fair organized by TEC.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end -->
-                         <!-- Card begnin -->
-                         <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/idhayam.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with M/S Idhayam G for identifying the technology challenges faced by the rural entrepreneurs and Self-Help Groups. The challenges faced towards technology adaptation by the rural community was discussed.
-                                </p>
+                            <!-- Card end -->
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/idhayam.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with M/S Idhayam G for identifying the technology challenges faced by the rural entrepreneurs and Self-Help Groups. The challenges faced towards technology adaptation by the rural community was discussed.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end -->   
-                        <!-- Card begnin -->
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/cochinshipyard1.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with Cochin Shipyard on impactful sustainable technologies for the world through rural entrepreneurship. The global market opportunities and the logistics challenges to reach the global markets were discussed. 
-                                </p>
+                            <!-- Card end -->   
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/cochinshipyard1.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with Cochin Shipyard on impactful sustainable technologies for the world through rural entrepreneurship. The global market opportunities and the logistics challenges to reach the global markets were discussed. 
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end --> 
-                        <!-- Card begnin -->
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/vaigai.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with M/S Vaigai Coir Cluster for identifying the technology challenges faced by coir entrepreneurs. The challenges faced to develop novel products in coir was discussed.
-                                </p>
+                            <!-- Card end --> 
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/vaigai.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with M/S Vaigai Coir Cluster for identifying the technology challenges faced by coir entrepreneurs. The challenges faced to develop novel products in coir was discussed.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end --> 
-                         <!-- Card begnin -->
-                         <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/employmenttraining.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with Rural Self Employment Training Institute by Indian Overseas Bank on for supporting rural entrepreneurs through innovative technology. The challenges faced by the women entrepreneur were discussed.
-                                </p>
+                            <!-- Card end --> 
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/employmenttraining.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with Rural Self Employment Training Institute by Indian Overseas Bank on for supporting rural entrepreneurs through innovative technology. The challenges faced by the women entrepreneur were discussed.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end --> 
-                         <!-- Card begnin -->
-                         <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/livelihood.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with local panchayat for identifying the challenges faced by the rural community to get empowered by technology. The challenges faced by the panchayat admiration to uplift the livelihood of the rural economy was discussed.
-                                </p>
+                            <!-- Card end --> 
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/livelihood.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with local panchayat for identifying the challenges faced by the rural community to get empowered by technology. The challenges faced by the panchayat admiration to uplift the livelihood of the rural economy was discussed.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end --> 
-                         <!-- Card begnin -->
-                         <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/developmentinstitute.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with MSME Development Institute, Thrissur authorities on patent facilitation center. The importance of the intellectual Property for the small industries were discussed and highlighted.
-                                </p>
+                            <!-- Card end --> 
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/developmentinstitute.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with MSME Development Institute, Thrissur authorities on patent facilitation center. The importance of the intellectual Property for the small industries were discussed and highlighted.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end --> 
-                          <!-- Card begnin -->
-                          <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/technocrats.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with technocrats at the stall exhibited at Global Tech Summit held at Visakhapatnam.
-                                </p>
+                            <!-- Card end --> 
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/technocrats.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with technocrats at the stall exhibited at Global Tech Summit held at Visakhapatnam.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end --> 
-                          <!-- Card begnin -->
-                          <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/govbody.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Interactions with the governing body members of the Bangalore Chamber of Commerce and Industries. Collaboration for the joint center of excellence and the objective to be jointly accomplished were discussed.
-                                </p>
+                            <!-- Card end --> 
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/govbody.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Interactions with the governing body members of the Bangalore Chamber of Commerce and Industries. Collaboration for the joint center of excellence and the objective to be jointly accomplished were discussed.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end --> 
-                          <!-- Card begnin -->
-                          <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/medimove.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with M/S Medimove LLP for technology development for the challenges faced by the healthcare industry in the elderly care was discussed.
-                                </p>
+                            <!-- Card end --> 
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/medimove.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with M/S Medimove LLP for technology development for the challenges faced by the healthcare industry in the elderly care was discussed.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end --> 
-                         <!-- Card begnin -->
-                         <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/coirboard.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with Coir Boards and Laghu Udyog Bharati for addressing the technology development and exploring the opportunities for the coir industry.
-                                </p>
+                            <!-- Card end --> 
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/coirboard.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with Coir Boards and Laghu Udyog Bharati for addressing the technology development and exploring the opportunities for the coir industry.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end --> 
-                         <!-- Card begnin -->
-                         <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/medsby.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with M/S Medsby Healthcare and Engineering Solutions for partnering for technology development in the health care industry.
-                                </p>
+                            <!-- Card end --> 
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/medsby.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with M/S Medsby Healthcare and Engineering Solutions for partnering for technology development in the health care industry.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end --> 
-                         <!-- Card begnin -->
-                         <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/zar.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with ZAR Capitals for partnership to build an ecosystem fostering technology.
-                                </p>
+                            <!-- Card end --> 
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/zar.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with ZAR Capitals for partnership to build an ecosystem fostering technology.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end --> 
-                         <!-- Card begnin -->
-                         <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/spirex.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with Spirex food, millet entrepreneurship consultant for Millet year 2023.
-                                </p>
+                            <!-- Card end --> 
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/spirex.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with Spirex food, millet entrepreneurship consultant for Millet year 2023.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end --> 
-                         <!-- Card begnin -->
-                         <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/genwork.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Amrita team of innovators interact with Genworks for discussion on various innovations and industry requirement in the field of Healthcare.
-                                </p>
+                            <!-- Card end --> 
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/genwork.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Amrita team of innovators interact with Genworks for discussion on various innovations and industry requirement in the field of Healthcare.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end -->
-                         <!-- Card begnin -->
-                         <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/genwork2.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Demonstration of the healthcare devices using non-invasive technique to the technical team of Genworks.
-                                </p>
+                            <!-- Card end -->
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/genwork2.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Demonstration of the healthcare devices using non-invasive technique to the technical team of Genworks.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end -->
-                         <!-- Card begnin -->
-                         <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/globaltech.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with the technopreneurs and students at Global Tech Summit at Visakhapatnam.
-                                </p>
+                            <!-- Card end -->
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/globaltech.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with the technopreneurs and students at Global Tech Summit at Visakhapatnam.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end -->
-                        <!-- Card begnin -->
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/kaladyrillmiller.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with Kalady Rill Miller Consortium and Pavizham rice cluster for technologies of Effluent water treatment from rice cluster.
-                                </p>
+                            <!-- Card end -->
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/kaladyrillmiller.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with Kalady Rill Miller Consortium and Pavizham rice cluster for technologies of Effluent water treatment from rice cluster.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end -->
-                        <!-- Card begnin -->
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/cosiema.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with COSIEMA for partnering for technology advancement, exchange of knowledge, resources, and networks, leading to mutually beneficial projects and initiatives. 
-                                </p>
+                            <!-- Card end -->
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/cosiema.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with COSIEMA for partnering for technology advancement, exchange of knowledge, resources, and networks, leading to mutually beneficial projects and initiatives. 
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end -->
-                          <!-- Card begnin -->
-                          <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/aroncapital.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with Aaron Capital for collaboration and partnership for technology commercialization. The strategic funding opportunities for technology development and research was discussed.
-                                </p>
+                            <!-- Card end -->
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/aroncapital.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with Aaron Capital for collaboration and partnership for technology commercialization. The strategic funding opportunities for technology development and research was discussed.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end -->
-                         <!-- Card begnin -->
-                         <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/windmill.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Technology demonstration of durable windmill brake pads to  Nutech Windparts, pioneer in windmill accessories and component manufacturer and supplier.
-                                </p>
+                            <!-- Card end -->
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/windmill.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Technology demonstration of durable windmill brake pads to  Nutech Windparts, pioneer in windmill accessories and component manufacturer and supplier.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end -->
-                         <!-- Card begnin -->
-                         <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/saico.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with the SAICO, Agricultural Consortium with interdisciplinary team from Amrita for discussion on various technology requirements of the Consortium.
-                                </p>
+                            <!-- Card end -->
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/saico.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with the SAICO, Agricultural Consortium with interdisciplinary team from Amrita for discussion on various technology requirements of the Consortium.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Card end -->
-                         <!-- Card begnin -->
-                         <div class="col-lg-4 col-sm-6">
-                            <div class="about-item">
-                                <img src="./images/interaction/instituteofindian.jpg" alt="" style="
-                                width:  300px;
-                                height: 200px;
-                                object-fit: cover; display: block;
-                                margin-left: auto;
-                                margin-right: auto;">
-                                <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with the Institute of Indian Foundrymen for circular and green technology  for the foundry industries in Coimbatore district.
-                                </p>
+                            <!-- Card end -->
+                            <!-- Card begnin -->
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="about-item">
+                                    <img src="./images/interaction/instituteofindian.jpg" alt="" style="
+                                    width:  300px;
+                                    height: 200px;
+                                    object-fit: cover; display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;">
+                                    <p style="font-size: 18px; font-family: bb; text-align: center;">Interaction with the Institute of Indian Foundrymen for circular and green technology  for the foundry industries in Coimbatore district.
+                                    </p>
+                                </div>
                             </div>
+                            <!-- Card end -->
                         </div>
-                        <!-- Card end -->
                     </div>
                 </div>
             </div>
             <!-- Interactin end -->
-            
+            <br><br>
+            <!-- Youtube videos -->
+            <button class="accordion">Youtube</button>
+                <div class="panel"> 
                     <div class="row">
                         <div class="col-lg-6">
+                            <br>
                             <iframe width="100%" height="315" src="https://www.youtube.com/embed/o8C_DTLveeQ"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
                         </div><br>
                         <div class="col-lg-6">
+                            <br>
                             <iframe width="100%" height="315" src="https://www.youtube.com/embed/0gB_R9mkppY"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1061,6 +1091,8 @@
                         
 
                     </div>
+                </div>    
+                <!-- Youtube video ends -->
                     <br><br>
                 
         </div>
@@ -1152,22 +1184,25 @@
         </div>
     </section>
     <!-- FOOTER AREA END -->
-    <script>
-        var coll = document.getElementsByClassName("accordion");
-        var i;
 
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function () {
-                this.classList.toggle("activetoggle");
-                var content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                    content.style.display = "none";
-                } else {
-                    content.style.display = "block";
-                }
-            });
+    <!-- Accordian expansion code -->
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
         }
-    </script>
+        </script>
+     <!-- end Accordian expansion code -->
     <!-- COPY_RIGHT AREA START -->
     <section id="copy_right">
         <div class="container">
