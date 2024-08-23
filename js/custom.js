@@ -174,5 +174,6 @@
     // counter part js
     $('.counter').counterUp();
     // video player js
-    jQuery("#bgndVideo").YTPlayer();
-}(jQuery));
+    // jQuery("#bgndVideo").YTPlayer();
+
+  }(jQuery));
