@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Human Trafficking Awareness Program</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #333;
+            margin: 0;
+            background: #fafbfc;
+        }
+
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Placeholder image box */
+        .img-placeholder {
+            background: repeating-linear-gradient(45deg, #e6e9ee, #e6e9ee 10px, #dde2ea 10px, #dde2ea 20px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #8a94a6;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: .85rem;
+            text-align: center;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        /* Hero */
+        #hero {
+            background: linear-gradient(135deg, #5b1a3a 0%, #8a1f4d 55%, #b0284f 100%);
+            color: #fff;
+            padding: 90px 0 70px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #hero::before {
+            content: '';
+            position: absolute;
+            top: -60px;
+            right: -60px;
+            width: 320px;
+            height: 320px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, .06);
+        }
+
+        #hero::after {
+            content: '';
+            position: absolute;
+            bottom: -80px;
+            left: -40px;
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, .05);
+        }
+
+        #hero h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 2.3rem;
+            margin-bottom: 12px;
+            position: relative;
+            z-index: 2;
+        }
+
+        #hero p.lead {
+            font-size: 1.05rem;
+            opacity: .92;
+            max-width: 640px;
+            margin: 0 auto 26px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .btn-primary-cta {
+            background: #fff;
+            color: #7a1c40;
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+            border: none;
+            padding: 12px 34px;
+            border-radius: 30px;
+            font-size: 1rem;
+            text-decoration: none;
+            display: inline-block;
+            position: relative;
+            z-index: 2;
+            transition: .25s;
+        }
+
+        .btn-primary-cta:hover {
+            background: #f0c040;
+            color: #7a1c40;
+        }
+
+        .helpline-strip {
+            background: rgba(255, 255, 255, .12);
+            border-radius: 30px;
+            padding: 8px 22px;
+            display: inline-block;
+            margin-top: 18px;
+            font-size: .88rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Section label */
+        .section-label {
+            text-align: center;
+            padding: 48px 0 10px;
+        }
+
+        .section-label h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #5b1a3a;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .section-label .underline {
+            width: 48px;
+            height: 3px;
+            background: #b0284f;
+            margin: 0 auto 16px;
+            border-radius: 2px;
+        }
+
+        .section-label p {
+            color: #666;
+            max-width: 680px;
+            margin: 0 auto;
+            font-size: .97rem;
+            line-height: 1.7;
+        }
+
+        /* Stats */
+        #stats {
+            padding: 10px 0 40px;
+        }
+
+        .stat-box {
+            text-align: center;
+            padding: 18px 10px;
+        }
+
+        .stat-box .num {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 2.1rem;
+            color: #b0284f;
+        }
+
+        .stat-box .lbl {
+            font-size: .85rem;
+            color: #666;
+            margin-top: 4px;
+        }
+
+        /* Cards */
+        .opp-cards {
+            padding: 10px 0 48px;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        @media (max-width:768px) {
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .opp-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, .08);
+            overflow: hidden;
+            transition: .25s;
+        }
+
+        .opp-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 32px rgba(0, 0, 0, .13);
+        }
+
+        .opp-card .img-placeholder {
+            height: 160px;
+            border-radius: 0;
+        }
+
+        .opp-card-body {
+            padding: 22px 22px 26px;
+        }
+
+        .opp-card h5 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            color: #5b1a3a;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: .4px;
+        }
+
+        .opp-card p {
+            font-size: .9rem;
+            color: #666;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Why attend */
+        #why {
+            background: #fbeef2;
+            padding: 50px 0;
+        }
+
+        .why-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .why-item .wi-icon {
+            width: 38px;
+            height: 38px;
+            min-width: 38px;
+            background: #7a1c40;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: .9rem;
+            margin-right: 14px;
+        }
+
+        .why-item p {
+            margin: 0;
+            font-size: .95rem;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        /* About + gallery split */
+        #about-split {
+            padding: 50px 0;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.1fr .9fr;
+            gap: 36px;
+            align-items: center;
+        }
+
+        @media (max-width:900px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .about-grid h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: #5b1a3a;
+            font-size: 1.7rem;
+            margin-bottom: 10px;
+        }
+
+        .about-grid p {
+            color: #555;
+            font-size: .97rem;
+            line-height: 1.75;
+            margin-bottom: 14px;
+        }
+
+        .mini-gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+        }
+
+        .mini-gallery .img-placeholder:first-child {
+            grid-column: 1 / -1;
+            height: 150px;
+        }
+
+        .mini-gallery .img-placeholder {
+            height: 110px;
+        }
+
+        /* Topics / focus areas tabs */
+        #topics {
+            padding: 50px 0;
+        }
+
+        .field-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 36px;
+        }
+
+        .field-tab {
+            background: #fff;
+            border: 2px solid #ecd3dc;
+            border-radius: 30px;
+            padding: 8px 22px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: .85rem;
+            font-weight: 600;
+            color: #5b1a3a;
+            cursor: pointer;
+            transition: .2s;
+        }
+
+        .field-tab:hover,
+        .field-tab.active {
+            background: #7a1c40;
+            border-color: #7a1c40;
+            color: #fff;
+        }
+
+        .topic-panel {
+            display: none;
+        }
+
+        .topic-panel.active {
+            display: block;
+        }
+
+        .topics-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        @media (max-width:768px) {
+            .topics-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .topic-box {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, .07);
+            overflow: hidden;
+        }
+
+        .topic-box-header {
+            background: linear-gradient(90deg, #5b1a3a, #b0284f);
+            color: #fff;
+            padding: 14px 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: .9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .5px;
+        }
+
+        .topic-box-header.alt {
+            background: linear-gradient(90deg, #0e6fad, #12a4c0);
+        }
+
+        .topic-box ul {
+            margin: 0;
+            padding: 16px 20px 16px 36px;
+            list-style: disc;
+        }
+
+        .topic-box ul li {
+            font-size: .88rem;
+            color: #444;
+            padding: 3px 0;
+            line-height: 1.55;
+        }
+
+        /* CTA */
+        #cta-strip {
+            background: linear-gradient(135deg, #5b1a3a, #b0284f);
+            color: #fff;
+            padding: 48px 0;
+            text-align: center;
+        }
+
+        #cta-strip h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+
+        #cta-strip p {
+            opacity: .88;
+            margin-bottom: 22px;
+            font-size: 1rem;
+        }
+
+        /* Helpline footer note */
+        #helpline-bar {
+            background: #fff;
+            padding: 24px 0;
+            text-align: center;
+            border-top: 1px solid #eee;
+        }
+
+        #helpline-bar p {
+            margin: 4px 0;
+            font-size: .88rem;
+            color: #555;
+        }
+
+        #helpline-bar strong {
+            color: #7a1c40;
+        }
+
+        /* Footer */
+        #footer {
+            background: #3a0f22;
+            padding: 30px 0;
+            text-align: center;
+            color: #eee;
+            font-size: .85rem;
+        }
+
+        #copy_right {
+            background: #280a17;
+            padding: 12px 0;
+            text-align: center;
+        }
+
+        #copy_right p {
+            color: #a98;
+            font-size: .8rem;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="container" style="position:relative;z-index:2;">
+            <h1>Human Trafficking Awareness &amp; Prevention Program</h1>
+            <p class="lead">Educating Communities, Empowering Survivors, and Building a Safer Society — Together We Can
+                End Exploitation.</p>
+            <a href="#register" class="btn-primary-cta">Register to Attend &nbsp;→</a>
+            <br>
+            <span class="helpline-strip">🆘 National Anti-Trafficking Helpline: 1800-XXX-XXXX (24/7)</span>
+        </div>
+    </section>
+
+    <!-- QUICK STATS (sample placeholder figures) -->
+    <section id="stats">
+        <div class="container">
+            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;" class="stats-grid">
+                <div class="stat-box">
+                    <div class="num">27M+</div>
+                    <div class="lbl">Estimated victims worldwide*</div>
+                </div>
+                <div class="stat-box">
+                    <div class="num">150+</div>
+                    <div class="lbl">Countries affected*</div>
+                </div>
+                <div class="stat-box">
+                    <div class="num">1 in 4</div>
+                    <div class="lbl">Victims are children*</div>
+                </div>
+                <div class="stat-box">
+                    <div class="num">24/7</div>
+                    <div class="lbl">Helpline support available</div>
+                </div>
+            </div>
+            <p style="text-align:center;font-size:.75rem;color:#999;margin-top:10px;">*Sample placeholder statistics —
+                replace with verified data from authoritative sources (e.g., UNODC, ILO) before publishing.</p>
+        </div>
+    </section>
+
+    <!-- ABOUT THE PROGRAM -->
+    <div class="section-label">
+        <h2>About the Program</h2>
+        <div class="underline"></div>
+        <p>A community outreach initiative to raise awareness about human trafficking, its warning signs, and how
+            students, educators, and the public can help prevent it and support survivors.</p>
+    </div>
+
+    <!-- FEATURED FOCUS AREAS -->
+    <section class="opp-cards">
+        <div class="container">
+            <div class="card-grid">
+                <div class="opp-card">
+                    <div class="img-placeholder">Image Placeholder<br>(Awareness Session)</div>
+                    <div class="opp-card-body">
+                        <h5>Awareness Workshops</h5>
+                        <p>Interactive sessions on recognizing the signs of trafficking, understanding recruitment
+                            tactics, and staying safe online and offline.</p>
+                    </div>
+                </div>
+                <div class="opp-card">
+                    <div class="img-placeholder">Image Placeholder<br>(Legal Aid Session)</div>
+                    <div class="opp-card-body">
+                        <h5>Legal Rights &amp; Support</h5>
+                        <p>Learn about victim protection laws, reporting procedures, and how to access legal aid and law
+                            enforcement support.</p>
+                    </div>
+                </div>
+                <div class="opp-card">
+                    <div class="img-placeholder">Image Placeholder<br>(Survivor Support)</div>
+                    <div class="opp-card-body">
+                        <h5>Survivor Support Services</h5>
+                        <p>Overview of rehabilitation, counseling, shelter, and reintegration programs available to
+                            survivors and their families.</p>
+                    </div>
+                </div>
+                <div class="opp-card">
+                    <div class="img-placeholder">Image Placeholder<br>(Campus Outreach)</div>
+                    <div class="opp-card-body">
+                        <h5>Campus &amp; Community Outreach</h5>
+                        <p>Student-led awareness drives, pledge campaigns, and volunteer opportunities to spread
+                            prevention messaging locally.</p>
+                    </div>
+                </div>
+                <div class="opp-card">
+                    <div class="img-placeholder">Image Placeholder<br>(Panel Discussion)</div>
+                    <div class="opp-card-body">
+                        <h5>Expert Panel Discussions</h5>
+                        <p>Conversations with NGOs, law enforcement, and social workers on real-world prevention and
+                            rescue efforts.</p>
+                    </div>
+                </div>
+                <div class="opp-card">
+                    <div class="img-placeholder">Image Placeholder<br>(Volunteer Training)</div>
+                    <div class="opp-card-body">
+                        <h5>Volunteer &amp; Helpline Training</h5>
+                        <p>Training for students and volunteers to assist helpline operations and community reporting
+                            networks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY ATTEND -->
+    <section id="why">
+        <div class="container">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;" class="why-grid">
+                <div>
+                    <h2
+                        style="font-family:'Montserrat',sans-serif;font-weight:700;color:#5b1a3a;font-size:1.7rem;margin-bottom:8px;">
+                        Why Attend?</h2>
+                    <div style="width:48px;height:3px;background:#b0284f;border-radius:2px;margin-bottom:20px;"></div>
+                    <p style="color:#555;font-size:.97rem;line-height:1.75;">Awareness is the first line of defense
+                        against trafficking. This program equips you with the knowledge and resources to protect
+                        yourself, your peers, and your community.</p>
+                </div>
+                <div>
+                    <div class="why-item">
+                        <div class="wi-icon">1</div>
+                        <p>Understand warning signs and common recruitment methods used by traffickers</p>
+                    </div>
+                    <div class="why-item">
+                        <div class="wi-icon">2</div>
+                        <p>Learn safe and effective ways to report suspected trafficking cases</p>
+                    </div>
+                    <div class="why-item">
+                        <div class="wi-icon">3</div>
+                        <p>Access verified helpline numbers and support organization contacts</p>
+                    </div>
+                    <div class="why-item">
+                        <div class="wi-icon">4</div>
+                        <p>Get involved through volunteering and campus awareness campaigns</p>
+                    </div>
+                    <div class="why-item">
+                        <div class="wi-icon">5</div>
+                        <p>Receive a certificate of participation for community engagement</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT + MINI GALLERY -->
+    <section id="about-split">
+        <div class="container">
+            <div class="about-grid">
+                <div>
+                    <h2>Our Mission</h2>
+                    <p>This initiative is organized to educate students, faculty, and the wider community about the
+                        realities of human trafficking, dispel common myths, and build a network of informed, empowered
+                        individuals ready to act.</p>
+                    <p>Through partnerships with NGOs, law enforcement, and survivor advocacy groups, we aim to create a
+                        sustained impact — turning awareness into action.</p>
+                </div>
+                <div class="mini-gallery">
+                    <div class="img-placeholder">Image Placeholder — Event Banner</div>
+                    <div class="img-placeholder">Image Placeholder — Workshop</div>
+                    <div class="img-placeholder">Image Placeholder — Volunteers</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOCUS AREA TABS -->
+    <section id="topics">
+        <div class="section-label">
+            <h2>Program Tracks</h2>
+            <div class="underline"></div>
+            <p>Explore the different focus areas covered across sessions, workshops, and outreach activities.</p>
+        </div>
+        <div class="container">
+            <div class="field-tabs">
+                <button class="field-tab active" onclick="showTrack('awareness', this)">🔍 Awareness</button>
+                <button class="field-tab" onclick="showTrack('legal', this)">⚖️ Legal &amp; Rights</button>
+                <button class="field-tab" onclick="showTrack('support', this)">🤝 Survivor Support</button>
+                <button class="field-tab" onclick="showTrack('prevention', this)">🛡 Prevention</button>
+            </div>
+
+            <div id="track-awareness" class="topic-panel active">
+                <div class="topics-grid">
+                    <div class="topic-box">
+                        <div class="topic-box-header">📡 Session Topics</div>
+                        <ul>
+                            <li>What Is Human Trafficking? Myths vs Facts</li>
+                            <li>Recognizing Signs in Your Community</li>
+                            <li>Online Safety &amp; Social Media Risks</li>
+                            <li>Labor Trafficking vs Sex Trafficking</li>
+                            <li>Vulnerable Populations &amp; Risk Factors</li>
+                        </ul>
+                    </div>
+                    <div class="topic-box">
+                        <div class="topic-box-header alt">🛠 Activities</div>
+                        <ul>
+                            <li>Awareness Poster &amp; Pledge Campaign</li>
+                            <li>Peer-to-Peer Education Training</li>
+                            <li>Documentary Screening &amp; Discussion</li>
+                            <li>Interactive Q&amp;A with Experts</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="track-legal" class="topic-panel">
+                <div class="topics-grid">
+                    <div class="topic-box">
+                        <div class="topic-box-header">📡 Session Topics</div>
+                        <ul>
+                            <li>Overview of Anti-Trafficking Laws</li>
+                            <li>Victim Protection &amp; Rights</li>
+                            <li>How to File a Report Safely</li>
+                            <li>Role of Law Enforcement Agencies</li>
+                            <li>Cross-Border Trafficking &amp; Jurisdiction</li>
+                        </ul>
+                    </div>
+                    <div class="topic-box">
+                        <div class="topic-box-header alt">🛠 Activities</div>
+                        <ul>
+                            <li>Mock Reporting Walkthrough</li>
+                            <li>Legal Aid Clinic (Q&amp;A with Advocates)</li>
+                            <li>Know-Your-Rights Handbook Distribution</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="track-support" class="topic-panel">
+                <div class="topics-grid">
+                    <div class="topic-box">
+                        <div class="topic-box-header">📡 Session Topics</div>
+                        <ul>
+                            <li>Trauma-Informed Care Basics</li>
+                            <li>Rehabilitation &amp; Reintegration Programs</li>
+                            <li>Mental Health Support for Survivors</li>
+                            <li>Vocational Training &amp; Livelihood Support</li>
+                        </ul>
+                    </div>
+                    <div class="topic-box">
+                        <div class="topic-box-header alt">🛠 Activities</div>
+                        <ul>
+                            <li>NGO Partner Showcase</li>
+                            <li>Volunteer Sign-Up for Shelter Programs</li>
+                            <li>Fundraising Drive for Survivor Services</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="track-prevention" class="topic-panel">
+                <div class="topics-grid">
+                    <div class="topic-box">
+                        <div class="topic-box-header">📡 Session Topics</div>
+                        <ul>
+                            <li>Community-Based Prevention Strategies</li>
+                            <li>Safe Migration &amp; Employment Practices</li>
+                            <li>Role of Technology in Prevention</li>
+                            <li>Building Local Reporting Networks</li>
+                        </ul>
+                    </div>
+                    <div class="topic-box">
+                        <div class="topic-box-header alt">🛠 Activities</div>
+                        <ul>
+                            <li>Campus Ambassador Program Sign-Up</li>
+                            <li>Community Outreach Planning Workshop</li>
+                            <li>Helpline Volunteer Training</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="register" style="padding:0;">
+        <div id="cta-strip">
+            <div class="container">
+                <h3>Join Us in Making a Difference</h3>
+                <p>Register now to attend the program, become a campus ambassador, or volunteer with our outreach team.
+                </p>
+                <a href="#" class="btn-primary-cta" style="background:#f0c040;color:#5b1a3a;">Register Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- HELPLINE INFO -->
+    <div id="helpline-bar">
+        <div class="container">
+            <p><strong>National Anti-Trafficking Helpline:</strong> 1800-XXX-XXXX (Toll-Free, 24/7) — sample
+                placeholder, replace with verified local helpline number</p>
+            <p>If you or someone you know needs help, please contact local law enforcement or an accredited support
+                organization.</p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <section id="footer">
+        <div class="container">
+            <p>Organized by the Institute Outreach Team · Sample Placeholder Content for Demonstration Purposes</p>
+        </div>
+    </section>
+    <section id="copy_right">
+        <div class="container">
+            <p>Copyright © 2025 – Sample Page. All Rights Reserved.</p>
+        </div>
+    </section>
+
+    <script>
+        function showTrack(track, btn) {
+            document.querySelectorAll('.topic-panel').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('.field-tab').forEach(b => b.classList.remove('active'));
+            document.getElementById('track-' + track).classList.add('active');
+            btn.classList.add('active');
+        }
+    </script>
+
+</body>
+
+</html>
